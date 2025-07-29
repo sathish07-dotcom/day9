@@ -1,0 +1,126 @@
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      width: 50%;
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border: 2px solid red;
+      border-radius: 20px;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      width: 70px;
+    }
+
+    .t1 h3 {
+      color: blue;
+      text-align: center;
+      margin: 0;
+    }
+
+    .t2 h2 {
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    .t3 h4 {
+      color: red;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    fieldset {
+      border: 2px solid blue;
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+      background-color: #114da1;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 5px;
+    }
+
+    input[type="radio"] {
+      margin: 0 5px 0 10px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 60px;
+    }
+
+    .submit-area {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .submit-area input[type="text"] {
+      width: 150px;
+      display: inline-block;
+      margin: 5px;
+    }
+
+    .submit-area input[type="submit"] {
+      padding: 10px 20px;
+      background-color: green;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+     .submit-area input[type="submit"]:hover{
+        background-color: red;
+     }
+
+    @media screen and (max-width: 768px) {
+      input[type="text"],
+      input[type="date"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+      }
+    }
