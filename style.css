@@ -115,12 +115,91 @@
         background-color: red;
      }
 
-    @media screen and (max-width: 768px) {
-      input[type="text"],
-      input[type="date"],
-      input[type="email"],
-      select,
-      textarea {
-        width: 100%;
-      }
-    }
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  fieldset {
+    padding: 8px;
+  }
+
+  legend {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="file"],
+  select,
+  textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .submit-area input[type="text"] {
+    width: 100px;
+  }
+
+  .submit-area input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .t1 h3,
+  .t2 h2,
+  .t3 h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .t1 h3,
+  .t2 h2,
+  .t3 h4 {
+    font-size: 14px;
+  }
+
+  legend {
+    font-size: 12px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  input[type="radio"] {
+    margin: 0 3px 0 5px;
+  }
+
+  .submit-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .submit-area input[type="text"] {
+    width: 100%;
+  }
+
+  .submit-area input[type="submit"] {
+    font-size: 14px;
+  }
+}
+
